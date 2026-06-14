@@ -21,7 +21,7 @@ function Register() {
 
       const { data } = await axios.post(
 
-        "hhttps://luxemart-bkd.onrender.com"/
+        "https://luxemart-bkd.onrender.com/api/auth/register"/
         {
           name,
           email,
