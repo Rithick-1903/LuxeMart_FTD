@@ -19,7 +19,7 @@ function Login() {
 
       const { data } = await axios.post(
 
-        "https://luxemart-bkd.onrender.com/",
+        "https://luxemart-bkd.onrender.com/api/auth/login",
 
         {
           email,
