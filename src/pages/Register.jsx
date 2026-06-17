@@ -21,12 +21,12 @@ function Register() {
 
       const { data } = await axios.post(
 
-        "https://luxemart-bkd.onrender.com/api/auth/register"/
+        "https://luxemart-bkd.onrender.com/api/auth/register",
         {
           name,
           email,
           phone,
-          password
+          password,
         }
 
       );
@@ -40,8 +40,9 @@ function Register() {
       alert(
         error.response?.data?.message ||
         "Registration Failed"
+        
       );
-
+console.log(error)
     }
 
   };
